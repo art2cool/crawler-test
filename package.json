@@ -2,12 +2,14 @@
   "name": "Angular-SEO-Prerender",
   "description": "...",
   "version": "0.0.1",
-  "private": "true",
+  "main": "server.js",
   "dependencies": {
     "express": "latest",
     "prerender-node": "latest"
   },
   "devDependencies": {
     "morgan": "^1.7.0"
-  }
+  },
+  "author": "Volodymyr-Paskiv",
+  "license": "MIT"
 }
