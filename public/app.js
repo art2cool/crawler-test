@@ -21,8 +21,8 @@ var app = angular.module('prerender-tutorial', ['ui.router'])
 
   $urlRouterProvider.otherwise('/');
 
-  $locationProvider.html5Mode({ enabled: true,  requireBase: false});
-  $locationProvider.hashPrefix('!');
+  // $locationProvider.html5Mode({ enabled: true,  requireBase: false});
+  // $locationProvider.hashPrefix('!');
 });
 
 app.controller('mainController', function ($scope) {
