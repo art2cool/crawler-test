@@ -5,16 +5,11 @@ var app = express();
 
 // Here we require the prerender middleware that will handle requests from Search Engine crawlers
 // We set the token only if we're using the Prerender.io service
-app.use(require('prerender-node').set('prerenderToken', 'YOUR-TOKEN-HERE'));
+//app.use(require('prerender-node').set('prerenderToken', 'YOUR-TOKEN-HERE'));
 
 app.use(express.static(__dirname + '/public'));
 
 app.get('/*', function(req, res){
-  console.log(req.url);
-  // var googleFile = '/'+ crawler-test/google54fac2c236d5188e.html
-  // if (req.url ===) {
-  //
-  // }
     res.sendFile(__dirname + '/public/index.html');
 });
 
