@@ -7,9 +7,6 @@
     "express": "latest",
     "prerender-node": "latest"
   },
-  "devDependencies": {
-    "morgan": "^1.7.0"
-  },
   "author": "Volodymyr-Paskiv",
   "license": "MIT"
 }
