@@ -10,6 +10,11 @@ app.use(require('prerender-node').set('prerenderToken', 'YOUR-TOKEN-HERE'));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/*', function(req, res){
+  console.log(req.url);
+  // var googleFile = '/'+ crawler-test/google54fac2c236d5188e.html
+  // if (req.url ===) {
+  //
+  // }
     res.sendFile(__dirname + '/public/index.html');
 });
 
