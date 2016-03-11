@@ -30,6 +30,7 @@ app.controller('mainController', function ($scope) {
   $scope.seo = {
     pageTitle : '', pageDescription : ''
   };
+  $scope.message = "curl message";
 });
 
 
@@ -40,14 +41,17 @@ app.controller('homeController', function($scope) {
     pageTitle : 'AngularJS SEO Tutorial',
     pageDescripton: 'Welcome to our tutorial on getting your AngularJS websites and apps indexed by Google.'
   };
+  $scope.titles = 'Welcome home, Bobby';
 });
 
 app.controller('aboutController', function($scope) {
   $scope.$parent.seo = { pageTitle : 'About',
     pageDescripton: 'We are a content heavy website so we need to be indexed.'
   };
+  $scope.titles = 'Who We Are';
 });
 
 app.controller('featuresController', function($scope) {
   $scope.$parent.seo = { pageTitle : 'Features', pageDescripton: 'Check out some of our awesome features!' };
+  $scope.titles = 'You\'re in the features pages';
 });

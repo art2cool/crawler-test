@@ -4,8 +4,16 @@
   "version": "0.0.1",
   "main": "server.js",
   "dependencies": {
-    "express": "latest",
-    "prerender-node": "latest"
+    "express": "^4.13.4",
+    "prerender-node": "^2.2.0",
+    "aws-sdk": "^2.1.8",
+    "cache-manager": "^0.16.0",
+    "he": "^0.5.0",
+    "lodash": "^3.1.0",
+    "phridge": "^2.0.0"
+  },
+  "bin": {
+    "prerender": "server.js"
   },
   "author": "Volodymyr-Paskiv",
   "license": "MIT"
